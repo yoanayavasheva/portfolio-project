@@ -4,8 +4,29 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  margin-top: 100px !important;
+@media (min-width: 576px) {
+  .large-h1 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .large-h1 {
+    font-size: 40px;
+  }
+
+  .small-h3 {
+    font-size: 20px;
+  }
+
+  .app-links a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.body {
+  margin-top: 100px;
 }
 
 .main-headers {
@@ -13,21 +34,8 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 96px !important;
-}
-
-h2 {
-  font-size: 48px !important;
-}
-
 h3 {
-  font-size: 24px !important;
   opacity: 0.7;
-}
-
-p {
-  font-size: 18px;
 }
 
 a:hover {
@@ -78,8 +86,8 @@ a:hover {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .email-link:hover {
